@@ -3,5 +3,5 @@ listen web_servers
     bind *:443 ssl crt /etc/haproxy/certs/davyrwi.tech.pem
     http-request redirect scheme https code 301 unless { ssl_fc }
     balance roundrobin
-    server web-01 18.206.246.203:80 check
-    server web-02 35.175.244.21:80 check
+    server web-01 184.72.203.182:80 check
+    server web-02 54.162.102.135:80 check
